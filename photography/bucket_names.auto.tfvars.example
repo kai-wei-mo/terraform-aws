@@ -1,0 +1,10 @@
+# Copy to bucket_names.auto.tfvars (gitignored) and fill in your bucket names.
+# bucket_names.auto.tfvars is loaded automatically by Terraform.
+
+bucket_names = [
+  "YYYY-MM-DD-example-album",
+]
+
+iam_read_bucket_names = [
+  "YYYY-MM-DD-example-album",
+]
