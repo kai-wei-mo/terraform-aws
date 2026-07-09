@@ -1,0 +1,24 @@
+output "vpc_id" {
+  description = "VPC ID"
+  value       = aws_vpc.this.id
+}
+
+output "vpc_cidr" {
+  description = "VPC CIDR block"
+  value       = aws_vpc.this.cidr_block
+}
+
+output "public_subnet_id" {
+  description = "Public subnet ID (NAT gateway)"
+  value       = aws_subnet.public.id
+}
+
+output "private_subnet_id" {
+  description = "Private subnet ID"
+  value       = aws_subnet.private.id
+}
+
+output "nat_gateway_id" {
+  description = "NAT gateway ID"
+  value       = aws_nat_gateway.this.id
+}
